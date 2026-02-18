@@ -1,0 +1,8 @@
+default:
+    uv run --python pypy3.9.16 python --version
+    uv run --python pypy3.9.16 ./f.py < ./1.in
+    uv run --python pypy3.9.16 ./f.py < ./2.in
+    uv run --python pypy3.9.16 ./f.py < ./c1.in
+    uv run --python pypy3.9.16 ./f.py < ./c2.in
+    uv run --python pypy3.9.16 ./f.py < ./c3.in
+    uv run --python pypy3.9.16 ./f.py < ./c4.in
