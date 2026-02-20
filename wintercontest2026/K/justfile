@@ -1,0 +1,6 @@
+command := "uv run --python pypy3.9.16 python"
+
+default:
+    {{ command }} --version
+    {{ command }} ./k.py < ./1.in
+    {{ command }} ./k.py < ./2.in
