@@ -1,10 +1,5 @@
-#!/usr/bin/env python3
-
-import sys
-
 def query_in(x):
-    print("?", x, 0)
-    sys.stdout.flush()
+    print("?", x, 0, flush=True)
     return input() == "in"
 
 def main():
@@ -16,8 +11,7 @@ def main():
     while not query_in(x):
         pass
 
-    print("!", x)
-    sys.stdout.flush()
+    print("!", x, flush=True)
 
 if __name__ == "__main__":
     main()
